@@ -6,9 +6,9 @@ This is a **release-only** channel for the Android app. Source code stays in the
 
 ## Android updater contract
 - The app polls `https://api.github.com/repos/WahuVN/WuwaVH-Android-Releases/releases?per_page=20` when Home is opened.
-- GitHub tag format: `android-alpha.27` for Android `0.2.0-alpha.27` (versionCode 27).
-- Asset name: `WuWa-Viet-Hoa-Android-v0.2.0-alpha.27.apk`.
-- Upload only an APK signed with the *same trusted Android certificate* as the previous app version; Android requires user approval for installation.
+- GitHub tag format: `android-alpha.28` for Android `0.2.0-alpha.28` (versionCode 28).
+- Asset name: `WuWa-Viet-Hoa-Android-v0.2.0-alpha.28.apk`.
+- Public alpha APKs use the Android **release** build type (non-debuggable, no `src/debug` QA receivers/hooks) and keep the same trusted alpha certificate so installed alpha builds can update.
 - Publish only QA-approved APKs. This repository stays **public** so installed apps can check updates without credentials; the source repository remains separate/private.
 - GitHub's release asset `digest: sha256:...` is checked against downloaded APK bytes. The Android app additionally checks package name, versionCode and signing key before handing the APK to Android's package installer.
 - Game payload writes remain separate from app self-update: they require Shizuku/write access, a real game SIG, payload hash verification and transactional rollback; game/resource version metadata does not block installation.

@@ -6,6 +6,7 @@
 - [ ] Font apply/revert and translation text verified inside the real game
 - [ ] Stable/production channel only: APK signed with the dedicated production certificate
 - [ ] Upgrading from the previous build in the same channel succeeds because signer matches
+- [ ] Public alpha APK is a release build: non-debuggable and contains no DebugInstallReceiver/DEBUG broadcast QA hooks
 - [ ] GitHub Release tag follows android-alpha.N, APK filename includes alpha.N
 - [ ] Release asset SHA-256 provided by GitHub digest, and verified
 - [ ] Public release channel approved and made public; main/source GitHub repo stays private
