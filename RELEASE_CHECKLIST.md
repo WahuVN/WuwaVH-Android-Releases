@@ -4,8 +4,8 @@
 - [ ] Font and translation packs checked for correct SHA and language glyph coverage
 - [ ] Installed on actual Android device; no crash, version and Shizuku preferences preserved
 - [ ] Font apply/revert and translation text verified inside the real game
-- [ ] Production APK signed with a dedicated securely retained signing certificate
-- [ ] Upgrading from older APK succeeds because signer matches
+- [ ] Stable/production channel only: APK signed with the dedicated production certificate
+- [ ] Upgrading from the previous build in the same channel succeeds because signer matches
 - [ ] GitHub Release tag follows android-alpha.N, APK filename includes alpha.N
 - [ ] Release asset SHA-256 provided by GitHub digest, and verified
 - [ ] Public release channel approved and made public; main/source GitHub repo stays private
